@@ -1,0 +1,94 @@
+╔══════════════════════════════════════════════════════════════════╗
+║         COFIPIA Desktop v1.0 — Guía de instalación             ║
+║         Sistema Antifraude · Ejército Nacional de Colombia      ║
+║         HUMANOIDESAI · Willman Solano · Chía, Cundinamarca       ║
+╚══════════════════════════════════════════════════════════════════╝
+
+
+¿CUÁL ARCHIVO EJECUTAR? — LEE ESTO PRIMERO
+═══════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────┐
+│  INSTALAR_COFIPIA.bat                                           │
+│  ─────────────────────────────────────────────────────────────  │
+│  USO: Para TI, en tu propio equipo, durante el desarrollo.     │
+│                                                                 │
+│  Qué hace:                                                      │
+│  1. Verifica / instala Node.js si no lo tienes                  │
+│  2. Instala las dependencias de Electron (npm install)          │
+│  3. Lanza COFIPIA Desktop directamente (npm start)              │
+│                                                                 │
+│  Resultado: La app se abre en tu PC. No genera ningún .exe.     │
+│  Requiere: Node.js, carpeta con código fuente completo.         │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│  CONSTRUIR_INSTALADOR.bat                                       │
+│  ─────────────────────────────────────────────────────────────  │
+│  USO: Para DISTRIBUIR la app al Ejército u otros usuarios.     │
+│                                                                 │
+│  Qué hace:                                                      │
+│  1. Compila toda la app en un instalador profesional            │
+│  2. Genera COFIPIA-Setup-1.0.0.exe                              │
+│  3. Lo copia automáticamente a tu carpeta Descargas             │
+│  4. Abre la carpeta Descargas para que lo encuentres           │
+│                                                                 │
+│  Resultado: Un .exe en Descargas listo para instalar en         │
+│  cualquier PC con Windows — sin Node.js, sin código fuente.     │
+│  Requiere: Node.js y electron-builder (se instalan solos).      │
+└─────────────────────────────────────────────────────────────────┘
+
+RESUMEN EN UNA LÍNEA:
+  INSTALAR = para usarlo TÚ mientras desarrollas
+  CONSTRUIR = para entregarlo al CLIENTE o al Ejército
+
+
+ESTRUCTURA DE CARPETAS REQUERIDA
+─────────────────────────────────
+C:\Users\Mr IoT\Desktop\GP\COFIPIA\
+│
+├── INSTALAR_COFIPIA.bat       ← Ejecutar para desarrollo local
+├── CONSTRUIR_INSTALADOR.bat   ← Ejecutar para generar el .exe
+├── main.js
+├── preload.js
+├── package.json
+├── LEEME.txt
+│
+├── src\
+│   ├── demo_ejercito_ia_real.html    ← COPIAR AQUÍ
+│   ├── ejercito_pagos_mvp.html       ← COPIAR AQUÍ
+│   ├── mapa_anomalias_ejercito.html  ← COPIAR AQUÍ
+│   ├── denuncia.html                 ← COPIAR AQUÍ
+│   └── navbar-desktop.html
+│
+└── assets\
+    └── icon.ico                      ← Se genera automáticamente
+
+
+ATAJOS DE TECLADO
+──────────────────
+Ctrl+1   →  Demo en Vivo (Análisis de recibos con IA)
+Ctrl+2   →  Dashboard COFIP (Gestión de pagos)
+Ctrl+3   →  Mapa de Anomalías (Geolocalización en tiempo real)
+Ctrl+4   →  Contratos (Anti-duplicidad y sobrecostos)
+Ctrl+5   →  Casas Fiscales ICFE (10 ciudades)
+Ctrl+6   →  Canal de Denuncia Anónima
+F11      →  Pantalla completa (ideal para presentaciones)
+F12      →  Herramientas de desarrollo
+Ctrl+R   →  Recargar módulo actual
+Ctrl++   →  Zoom +
+Ctrl+-   →  Zoom -
+
+
+DONDE QUEDA EL INSTALADOR
+──────────────────────────
+Después de ejecutar CONSTRUIR_INSTALADOR.bat:
+→ C:\Users\Mr IoT\Downloads\COFIPIA-Setup-1.0.0.exe
+
+Este .exe instala COFIPIA como aplicación profesional en
+cualquier PC con Windows 10 / 11, sin necesidad de Node.js.
+
+
+SOPORTE
+────────
+HUMANOIDESAI · Willman Solano
